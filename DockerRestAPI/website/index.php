@@ -29,7 +29,7 @@
         <h2>List of All Json</h2>
         <ul>
             <?php
-            $json = file_get_contents('http://laptop-service/listAllJson');
+            $json = file_get_contents('http://laptop-service/listAll/json');
             $obj = json_decode($json);
             $space = "<br>";
             foreach ($obj as $l) {
@@ -44,7 +44,7 @@
         <h2>List of All Csv</h2>
         <ul>
             <?php
-            $json = file_get_contents('http://laptop-service/listAllCsv');
+            $json = file_get_contents('http://laptop-service/listAll/csv');
             $obj = json_decode($json);
 
             $space = "&nbsp";
@@ -71,7 +71,7 @@
         <h2>List Open Only Json</h2>
         <ul>
             <?php
-            $json = file_get_contents('http://laptop-service/listOpenOnlyJson');
+            $json = file_get_contents('http://laptop-service/listOpenOnly/json');
             $obj = json_decode($json);
             foreach ($obj as $l) {     
                 foreach ($l as $a){
@@ -84,7 +84,7 @@
         <h2>List Open Only CSV</h2>
          <ul>
             <?php
-            $json = file_get_contents('http://laptop-service/listOpenOnlyCsv');
+            $json = file_get_contents('http://laptop-service/listOpenOnly/csv');
             $obj = json_decode($json);
             foreach ($obj as $l) {     
                 echo "<li>$l</li>";
@@ -110,7 +110,7 @@
         <h2>List Close Only Json</h2>
         <ul>
             <?php
-            $json = file_get_contents('http://laptop-service/listCloseOnlyJson');
+            $json = file_get_contents('http://laptop-service/listCloseOnly/json');
             $obj = json_decode($json);
             foreach ($obj as $l) {     
                 foreach ($l as $a){
@@ -123,7 +123,7 @@
         <h2>List Close Only Csv</h2>
          <ul>           
             <?php
-            $json = file_get_contents('http://laptop-service/listCloseOnlyCsv');
+            $json = file_get_contents('http://laptop-service/listCloseOnly/csv');
             $obj = json_decode($json);
             foreach ($obj as $l) {     
                 

@@ -173,16 +173,16 @@ class ListCloseOnlyCsv(Resource):
 # Create routes
 
 api.add_resource(ListAll, '/listAll')
-api.add_resource(ListAllJson, '/listAllJson')
-api.add_resource(ListAllCsv, '/listAllCsv')
+api.add_resource(ListAllJson, '/listAll/json')
+api.add_resource(ListAllCsv, '/listAll/csv')
 
 api.add_resource(ListOpenOnly, '/listOpenOnly')
-api.add_resource(ListOpenOnlyJson, '/listOpenOnlyJson')
-api.add_resource(ListOpenOnlyCsv, '/listOpenOnlyCsv')
+api.add_resource(ListOpenOnlyJson, '/listOpenOnly/json')
+api.add_resource(ListOpenOnlyCsv, '/listOpenOnly/csv')
 
 api.add_resource(ListCloseOnly, '/listCloseOnly')
-api.add_resource(ListCloseOnlyJson, '/listCloseOnlyJson')
-api.add_resource(ListCloseOnlyCsv, '/listCloseOnlyCsv')
+api.add_resource(ListCloseOnlyJson, '/listCloseOnly/json')
+api.add_resource(ListCloseOnlyCsv, '/listCloseOnly/csv')
 
 
 # Run the application
